@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E0D45C44-B15C-46D9-8F63-6D0781C3A99F"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56FADDA5-5DBC-4E76-B245-D033DD7F6874"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Newletters/ViewModel/ArticleVM.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "requestSectionBy(typo:range:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56FADDA5-5DBC-4E76-B245-D033DD7F6874 - 65329c3b1448fa0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Newletters.ArticleListCache&gt;) -&gt; () in closure #2 (Swift.Error) -&gt; () in Newletters.ArticleVM.requestSectionBy(typo: Swift.Int, range: Swift.String) -&gt; ()"
+                  moduleName = "Newletters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/Newletters/Newletters/ViewModel/ArticleVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "3412">
+               </Location>
+               <Location
+                  uuid = "56FADDA5-5DBC-4E76-B245-D033DD7F6874 - 65329c3b1448fa0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Newletters.ArticleListCache&gt;) -&gt; () in closure #2 (Swift.Error) -&gt; () in Newletters.ArticleVM.requestSectionBy(typo: Swift.Int, range: Swift.String) -&gt; ()"
+                  moduleName = "Newletters"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/Newletters/Newletters/ViewModel/ArticleVM.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "3400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
