@@ -9,16 +9,16 @@ import Foundation
 
 class APICoordinator {
     
-    func request<T: Decodable>(url: String,
+    func request<T>(url: String,
                                completion: @escaping (BasicResponse<T>) -> Void,
                                failure: @escaping (Error) -> Void) {
         guard NetwoorkManager.shared.isConnected == true else{
-            failure(NSError(domain: "No Internet Connection", code: 0, userInfo: nil))
+            failure(NSError(domain: NetwoorkError.NoWifi.rawValue, code: 0, userInfo: nil))
             return
         }
         guard let urlCompleate = URL(string: "https://api.nytimes.com/svc/mostpopular/v2/" + url + ".json") else {
             DispatchQueue.main.async {
-                failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil))
+                failure(NSError(domain: NetwoorkError.InternalError.rawValue, code: 0, userInfo: nil))
             }
             return
         }
@@ -28,7 +28,7 @@ class APICoordinator {
         
         guard let finalURL = components?.url else {
             DispatchQueue.main.async {
-                failure(NSError(domain: "Invalid URL", code: 0, userInfo: nil))
+                failure(NSError(domain: NetwoorkError.InternalError.rawValue, code: 0, userInfo: nil))
             }
             return
         }
@@ -42,9 +42,8 @@ class APICoordinator {
             }
             
             guard let data = data else {
-                let error = NSError(domain: "No data", code: 0, userInfo: nil)
                 DispatchQueue.main.async {
-                    failure(error)
+                    failure(NSError(domain: NetwoorkError.EmptyData.rawValue, code: 0, userInfo: nil))
                 }
                 return
             }
@@ -56,7 +55,7 @@ class APICoordinator {
                 }
             } catch {
                 DispatchQueue.main.async {
-                    failure(error)
+                    failure(NSError(domain: NetwoorkError.InternalError.rawValue, code: 0, userInfo: nil))
                 }
             }
         }
@@ -67,7 +66,7 @@ class APICoordinator {
                       completion: @escaping (Data) -> Void,
                       failure: @escaping (Error) -> Void) {
         guard NetwoorkManager.shared.isConnected == true else{
-            failure(NSError(domain: "No Internet Connection", code: 0, userInfo: nil))
+            failure(NSError(domain: NetwoorkError.NoWifi.rawValue, code: 0, userInfo: nil))
             return
         }
         guard let url = URL(string: urlString) else { return }
@@ -80,9 +79,8 @@ class APICoordinator {
                 return
             }
             guard let data = data else {
-                let error = NSError(domain: "No data", code: 0, userInfo: nil)
                 DispatchQueue.main.async {
-                    failure(error)
+                    failure(NSError(domain: NetwoorkError.EmptyData.rawValue, code: 0, userInfo: nil))
                 }
                 return
             }

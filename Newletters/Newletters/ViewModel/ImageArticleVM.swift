@@ -9,11 +9,13 @@ import Foundation
 
 protocol ImageArticleVMDelegate: AnyObject{
     func responseImage(data: Data)
+    func responseFailure()
 }
 
 protocol ImageArticleVMDataSource: AnyObject{
     func requestImageBy(url: String)
 }
+
 class ImageArticleVM: ImageArticleVMDataSource{
     weak var delegate: ImageArticleVMDelegate?
     var apiCoordinator : APICoordinator
@@ -26,10 +28,8 @@ class ImageArticleVM: ImageArticleVMDataSource{
     func requestImageBy(url: String) {
         apiCoordinator.requestImage(from: url) { [weak self] responseData in
             self?.delegate?.responseImage(data: responseData)
-        } failure: { error in
+        } failure: {  [weak self]  error in
+            self?.delegate?.responseFailure()
         }
-
     }
-    
-    
 }

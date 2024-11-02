@@ -71,28 +71,25 @@ class ArticleVM: ArticleVMDatasource{
                 }
             } catch {
                 self?.sections[typo].data = []
-                self?.delegate?.responseFailure(message: "No data saved")
+                self?.delegate?.responseFailure(message: NetwoorkError.EmptyData.rawValue)
             }
         } failure: { [weak self] error in
             self?.db.fetchOnDatabase(params: [FilterModel(key: "identifier", value: self?.sections[typo].identifier ?? ""), FilterModel(key: "time", value: range)], ArticleListCache.self, completation: { response in
-                if let responseNoNil = response{
-                    do {
-                        let decodedData = try JSONDecoder().decode(BasicResponse<ArticleResponse>.self, from: responseNoNil.list ?? Data())
-                        for object in decodedData.results{
-                            self?.sections[typo].data.append(ArticleCacheModel(article: object, articleCacheImage: nil))
-                            self?.delegate?.responseItems()
-                            self?.delegate?.responseFailure(message: error.localizedDescription)
-                        }
+                do {
+                    let decodedData = try JSONDecoder().decode(BasicResponse<ArticleResponse>.self, from: response.list ?? Data())
+                    for object in decodedData.results{
+                        self?.sections[typo].data.append(ArticleCacheModel(article: object, articleCacheImage: nil))
+                        self?.delegate?.responseItems()
+                        self?.delegate?.responseFailure(message: error.localizedDescription)
                     }
-                    catch {
-                        self?.sections[typo].data = []
-                        self?.delegate?.responseFailure(message: "No data saved")
-                    }
-                }else{
-                    self?.sections[typo].data = []
-                    self?.delegate?.responseFailure(message: "No data saved")
-                    
                 }
+                catch {
+                    self?.sections[typo].data = []
+                    self?.delegate?.responseFailure(message: NetwoorkError.InternalError.rawValue)
+                }
+            }, failure: {
+                self?.sections[typo].data = []
+                self?.delegate?.responseFailure(message: NetwoorkError.EmptyData.rawValue)
             })
         }
         

@@ -21,12 +21,17 @@ class DatabaseCoordinator{
         }
     }
     
-    func fetchOnDatabase<T:Object>(params search: [FilterModel], _ objectType: T.Type, completation:@escaping(_ response: T?)->Void){
+    func fetchOnDatabase<T:Object>(params search: [FilterModel], _ objectType: T.Type, completation:@escaping(_ response: T)->Void,
+        failure:@escaping()->Void){
         let predicates = search.map { "\($0.key) = '\($0.value)'" }
         let predicateString = predicates.joined(separator: " AND ")
         let predicate = NSPredicate(format: predicateString)
         let item = realm.objects(T.self).filter(predicate).first
-        completation(item)
+        if let itemNoNIL = item{
+            completation(itemNoNIL)
+        }else{
+            failure()
+        }
     }
     
     func updateOnDatabase<T: Object>(params search: [FilterModel], with newObject: T, completion: @escaping (_ response: Bool) -> Void) {

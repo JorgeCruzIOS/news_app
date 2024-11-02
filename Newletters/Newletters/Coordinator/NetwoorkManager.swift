@@ -8,6 +8,12 @@
 import Foundation
 import Network
 
+enum NetwoorkError: String{
+    case EmptyData = "No data saved"
+    case NoWifi = "No Internet Connection"
+    case InternalError = "Please try again later"
+}
+
 class NetwoorkManager {
     static let shared = NetwoorkManager()
     

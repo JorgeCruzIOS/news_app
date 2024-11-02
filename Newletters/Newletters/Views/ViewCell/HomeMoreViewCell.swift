@@ -96,6 +96,10 @@ class HomeMoreViewCell:UITableViewCell,ViewDesign{
 }
 
 extension HomeMoreViewCell: ImageArticleVMDelegate{
+    func responseFailure() {
+        imageLetter.image = UIImage(named: "noimage")
+    }
+    
     func responseImage(data: Data) {
         itemCache?.articleCacheImage = data
         imageLetter.image = UIImage(data: data)

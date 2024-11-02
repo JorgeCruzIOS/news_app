@@ -28,6 +28,7 @@
 		FD2149552CD4475900A19D8D /* HomeItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2149422CD4475800A19D8D /* HomeItemViewCell.swift */; };
 		FD2610E92CD4A08F001655F6 /* NetwoorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2610E82CD4A08F001655F6 /* NetwoorkManager.swift */; };
 		FD2610EB2CD4A202001655F6 /* FloatingAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2610EA2CD4A202001655F6 /* FloatingAlert.swift */; };
+		FD3F06F82CD5514E00377C4B /* ArticleVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3F06F72CD5514E00377C4B /* ArticleVMTests.swift */; };
 		FD468CBA2CD448BC00AA3D3E /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FD468CB92CD448BC00AA3D3E /* RealmSwift */; };
 		FD468CBB2CD448BC00AA3D3E /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = FD468CB92CD448BC00AA3D3E /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		FD5E24032CD4456400608618 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5E24022CD4456400608618 /* AppDelegate.swift */; };
@@ -35,7 +36,18 @@
 		FD5E240A2CD4456400608618 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5E24082CD4456400608618 /* Main.storyboard */; };
 		FD5E240C2CD4456500608618 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5E240B2CD4456500608618 /* Assets.xcassets */; };
 		FD5E240F2CD4456500608618 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5E240D2CD4456500608618 /* LaunchScreen.storyboard */; };
+		FDDA7BD32CD5F6C400A35D04 /* ImageArticleVMTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDA7BD22CD5F6C400A35D04 /* ImageArticleVMTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3F06F92CD5514E00377C4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD5E23F72CD4456400608618 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD5E23FE2CD4456400608618;
+			remoteInfo = Newletters;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FD468CBC2CD448BC00AA3D3E /* Embed Frameworks */ = {
@@ -73,6 +85,8 @@
 		FD2149422CD4475800A19D8D /* HomeItemViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeItemViewCell.swift; sourceTree = "<group>"; };
 		FD2610E82CD4A08F001655F6 /* NetwoorkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwoorkManager.swift; sourceTree = "<group>"; };
 		FD2610EA2CD4A202001655F6 /* FloatingAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingAlert.swift; sourceTree = "<group>"; };
+		FD3F06F52CD5514E00377C4B /* NewlettersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewlettersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3F06F72CD5514E00377C4B /* ArticleVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleVMTests.swift; sourceTree = "<group>"; };
 		FD5E23FF2CD4456400608618 /* Newletters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Newletters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5E24022CD4456400608618 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD5E24062CD4456400608618 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,9 +94,17 @@
 		FD5E240B2CD4456500608618 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5E240E2CD4456500608618 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD5E24102CD4456500608618 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDDA7BD22CD5F6C400A35D04 /* ImageArticleVMTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageArticleVMTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FD3F06F22CD5514E00377C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5E23FC2CD4456400608618 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +195,15 @@
 			path = ViewCell;
 			sourceTree = "<group>";
 		};
+		FD3F06F62CD5514E00377C4B /* NewlettersTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3F06F72CD5514E00377C4B /* ArticleVMTests.swift */,
+				FDDA7BD22CD5F6C400A35D04 /* ImageArticleVMTest.swift */,
+			);
+			path = NewlettersTests;
+			sourceTree = "<group>";
+		};
 		FD468CB52CD448BC00AA3D3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				FD5E24012CD4456400608618 /* Newletters */,
+				FD3F06F62CD5514E00377C4B /* NewlettersTests */,
 				FD5E24002CD4456400608618 /* Products */,
 				FD468CB52CD448BC00AA3D3E /* Frameworks */,
 			);
@@ -193,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				FD5E23FF2CD4456400608618 /* Newletters.app */,
+				FD3F06F52CD5514E00377C4B /* NewlettersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -219,6 +252,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FD3F06F42CD5514E00377C4B /* NewlettersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3F06FD2CD5514E00377C4B /* Build configuration list for PBXNativeTarget "NewlettersTests" */;
+			buildPhases = (
+				FD3F06F12CD5514E00377C4B /* Sources */,
+				FD3F06F22CD5514E00377C4B /* Frameworks */,
+				FD3F06F32CD5514E00377C4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3F06FA2CD5514E00377C4B /* PBXTargetDependency */,
+			);
+			name = NewlettersTests;
+			productName = NewlettersTests;
+			productReference = FD3F06F52CD5514E00377C4B /* NewlettersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		FD5E23FE2CD4456400608618 /* Newletters */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD5E24132CD4456500608618 /* Build configuration list for PBXNativeTarget "Newletters" */;
@@ -250,6 +301,10 @@
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
+					FD3F06F42CD5514E00377C4B = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FD5E23FE2CD4456400608618;
+					};
 					FD5E23FE2CD4456400608618 = {
 						CreatedOnToolsVersion = 15.2;
 					};
@@ -272,11 +327,19 @@
 			projectRoot = "";
 			targets = (
 				FD5E23FE2CD4456400608618 /* Newletters */,
+				FD3F06F42CD5514E00377C4B /* NewlettersTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FD3F06F32CD5514E00377C4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5E23FD2CD4456400608618 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -290,6 +353,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FD3F06F12CD5514E00377C4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3F06F82CD5514E00377C4B /* ArticleVMTests.swift in Sources */,
+				FDDA7BD32CD5F6C400A35D04 /* ImageArticleVMTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FD5E23FB2CD4456400608618 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -322,6 +394,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FD3F06FA2CD5514E00377C4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD5E23FE2CD4456400608618 /* Newletters */;
+			targetProxy = FD3F06F92CD5514E00377C4B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		FD5E24082CD4456400608618 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -342,6 +422,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FD3F06FB2CD5514E00377C4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K57KMHCC3S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.NewlettersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newletters.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Newletters";
+			};
+			name = Debug;
+		};
+		FD3F06FC2CD5514E00377C4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K57KMHCC3S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jorge.NewlettersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Newletters.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Newletters";
+			};
+			name = Release;
+		};
 		FD5E24112CD4456500608618 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -474,8 +600,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,8 +633,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -530,6 +656,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FD3F06FD2CD5514E00377C4B /* Build configuration list for PBXNativeTarget "NewlettersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3F06FB2CD5514E00377C4B /* Debug */,
+				FD3F06FC2CD5514E00377C4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FD5E23FA2CD4456400608618 /* Build configuration list for PBXProject "Newletters" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
