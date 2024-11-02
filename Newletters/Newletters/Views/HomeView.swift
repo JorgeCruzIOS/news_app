@@ -64,7 +64,6 @@ class HomeView: ViewBuilder{
         ])
     }
     @objc private func buildData(){
-        print("pull")
         self.listNewDatasource.requestSectionBy(typo: 0, range: "1")
         self.listNewDatasource.requestSectionBy(typo: 1, range: "1")
         self.listNewDatasource.requestSectionBy(typo: 2, range: "1")
