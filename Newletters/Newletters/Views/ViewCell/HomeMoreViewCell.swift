@@ -79,7 +79,8 @@ class HomeMoreViewCell:UITableViewCell,ViewDesign{
         ])
     }
     
-    func buildData(model: ArticleCacheModel){
+    func buildData(model: ArticleCacheModel?){
+        guard let model = model else{return}
         itemCache = model
         titleLetter.text = model.article.title
         descriptionLetter.text = model.article.abstract

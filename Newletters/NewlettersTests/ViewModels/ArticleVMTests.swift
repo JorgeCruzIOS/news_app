@@ -33,7 +33,7 @@ final class ArticleVMTests: XCTestCase {
     }
 
     func testRequestSectionSuccess() {
-        expectation = self.expectation(description: "Request completed")
+        expectation = self.expectation(description: "ArticleVMTests completed")
         viewModel.delegate = self
         viewModel.requestSectionBy(typo: 0, range: "1")
         guard let expectation = expectation else{
@@ -44,7 +44,7 @@ final class ArticleVMTests: XCTestCase {
     }
     
     func testRequestSectionFailure(){
-        expectation = self.expectation(description: "Request completed with failure")
+        expectation = self.expectation(description: "ArticleVMTests completed with failure")
         viewModel.delegate = self
         viewModel.requestSectionBy(typo: 0, range: "TestFailure")
         guard let expectation = expectation else{

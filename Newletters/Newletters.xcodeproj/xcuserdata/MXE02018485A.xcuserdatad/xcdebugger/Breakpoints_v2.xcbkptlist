@@ -7,49 +7,224 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "56FADDA5-5DBC-4E76-B245-D033DD7F6874"
+            uuid = "AA7ECE28-388F-4490-86A1-23AC3165E68A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Newletters/ViewModel/ArticleVM.swift"
+            filePath = "NewlettersTests/NewlettersTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "testSectionsCount()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "01EA7398-1B6E-4CF0-9FB8-EBC67A0C4012"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewlettersTests/NewlettersTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ArticleVMTests"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB61D86B-49D6-4D95-8DEC-DFC2E1898FA3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewlettersTests/NewlettersTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "setUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7117F09-EE35-4634-9F02-B97C21C957EE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewlettersTests/Views/HomeMoreViewTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "sectionList(section:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A7117F09-EE35-4634-9F02-B97C21C957EE - db9aa56def440cdc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.itemBySection(section: Swift.Int, item: Swift.Int) -&gt; Newletters.ArticleCacheModel"
+                  moduleName = "NewlettersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "A7117F09-EE35-4634-9F02-B97C21C957EE - fa1c19d84b5e6df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.sectionList(section: Swift.Int) -&gt; Newletters.ArticleSectionModel"
+                  moduleName = "NewlettersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "A7117F09-EE35-4634-9F02-B97C21C957EE - 6adb79a8af2bbdf1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.sectionList(section: Swift.Int) -&gt; Swift.Optional&lt;Newletters.ArticleSectionModel&gt;"
+                  moduleName = "NewlettersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "56">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6AF09ADF-70F1-432D-8D56-00C6FC362E98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewlettersTests/Views/HomeMoreViewTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "itemBySection(section:item:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6AF09ADF-70F1-432D-8D56-00C6FC362E98 - db9aa56def440d79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.itemBySection(section: Swift.Int, item: Swift.Int) -&gt; Newletters.ArticleCacheModel"
+                  moduleName = "NewlettersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "6AF09ADF-70F1-432D-8D56-00C6FC362E98 - fe0b34d0f74fed4c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.itemBySection(section: Swift.Int, item: Swift.Int) -&gt; Swift.Optional&lt;Newletters.ArticleCacheModel&gt;"
+                  moduleName = "NewlettersTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "352">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CC029B26-FA40-413A-8DA7-199388141AAE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewlettersTests/Views/HomeMoreViewTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "requestSectionBy(typo:range:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "56FADDA5-5DBC-4E76-B245-D033DD7F6874 - 65329c3b1448fa0a"
+                  uuid = "CC029B26-FA40-413A-8DA7-199388141AAE - 6cc184fdffbd18cd"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Newletters.ArticleListCache&gt;) -&gt; () in closure #2 (Swift.Error) -&gt; () in Newletters.ArticleVM.requestSectionBy(typo: Swift.Int, range: Swift.String) -&gt; ()"
-                  moduleName = "Newletters"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.sectionsCount() -&gt; Swift.Int"
+                  moduleName = "NewlettersTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/MXE02018485A/Desktop/Newletters/Newletters/ViewModel/ArticleVM.swift"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "3412">
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "28">
                </Location>
                <Location
-                  uuid = "56FADDA5-5DBC-4E76-B245-D033DD7F6874 - 65329c3b1448fa0a"
+                  uuid = "CC029B26-FA40-413A-8DA7-199388141AAE - cbdb9d8fb69f6ec6"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Newletters.ArticleListCache&gt;) -&gt; () in closure #2 (Swift.Error) -&gt; () in Newletters.ArticleVM.requestSectionBy(typo: Swift.Int, range: Swift.String) -&gt; ()"
-                  moduleName = "Newletters"
+                  symbolName = "NewlettersTests.MockArticleVMDatasource.requestSectionBy(typo: Swift.Int, range: Swift.String) -&gt; ()"
+                  moduleName = "NewlettersTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/MXE02018485A/Desktop/Newletters/Newletters/ViewModel/ArticleVM.swift"
+                  urlString = "file:///Users/MXE02018485A/Desktop/news_app/Newletters/NewlettersTests/Views/HomeMoreViewTest.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "3400">
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "64">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CF382FC-0C6F-41B8-BBCC-7CB7422B6139"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NewlettersTests/Views/HomeMoreViewTest.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "itemBySection(section:item:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

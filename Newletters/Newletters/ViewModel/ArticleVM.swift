@@ -17,8 +17,8 @@ protocol ArticleVMDatasource: AnyObject{
     // var sections: [ArticleSectionModel] {get set}
     func sectionsCount()->Int
     func itemsCount(section: Int)->Int
-    func sectionList(section: Int)-> ArticleSectionModel
-    func itemBySection(section: Int, item: Int)-> ArticleCacheModel
+    func sectionList(section: Int)-> ArticleSectionModel?
+    func itemBySection(section: Int, item: Int)-> ArticleCacheModel?
     func requestSectionBy(typo: Int, range: String)
 }
 
@@ -46,11 +46,14 @@ class ArticleVM: ArticleVMDatasource{
         return sections[section].data.count
     }
     
-    func sectionList(section: Int) -> ArticleSectionModel {
+    func sectionList(section: Int) -> ArticleSectionModel? {
         return sections[section]
     }
     
-    func itemBySection(section: Int, item: Int) -> ArticleCacheModel {
+    func itemBySection(section: Int, item: Int) -> ArticleCacheModel? {
+        guard section < sections.count, item < sections[section].data.count else{
+            return nil
+        }
         return sections[section].data[item]
     }
     

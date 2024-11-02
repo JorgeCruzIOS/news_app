@@ -103,7 +103,7 @@ extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
             cell.itemSize = CGSize(width: 250, height: 190)
             cell.delegate = self
             cell.tag = indexPath.section
-            cell.items = listNewDatasource.sectionList(section: indexPath.section).data
+            cell.items = listNewDatasource.sectionList(section: indexPath.section)?.data ?? []
             return cell
         }
         return UICollectionViewCell()
@@ -113,9 +113,9 @@ extension HomeView: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         if kind == UICollectionView.elementKindSectionHeader{
             let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HomeHeaderViewCell", for: indexPath) as! HomeHeaderViewCell
             let model = listNewDatasource.sectionList(section: indexPath.section)
-            header.titleLabel.text = model.title
+            header.titleLabel.text = model?.title
             header.actionButton.tag = indexPath.section
-            header.iconImg.image = UIImage(named: model.image)
+            header.iconImg.image = UIImage(named: model?.image ?? "")
             header.actionButton.addTarget(self, action: #selector(watchMoreAction(_:)), for: .touchUpInside)
             return header
         }

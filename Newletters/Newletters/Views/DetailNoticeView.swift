@@ -46,7 +46,6 @@ class DetailNoticeView: ViewBuilder{
         boxContainer.axis = .vertical
         boxContainer.spacing = 10
         scrollContainer.translatesAutoresizingMaskIntoConstraints = false
-        scrollContainer.delegate = self
         backButton.translatesAutoresizingMaskIntoConstraints = false
         backButton.setImage(UIImage(named:"arrowback_ic"), for: .normal)
         backButton.tintColor = .white
@@ -183,28 +182,5 @@ class DetailNoticeView: ViewBuilder{
             bytitle.bottomAnchor.constraint(equalTo: box.bottomAnchor)
         ])
         boxContainer.addArrangedSubview(box)
-    }
-}
-
-extension DetailNoticeView: UIScrollViewDelegate{
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("scrollViewDidScroll")
-    }
-    
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        print("scrollViewDidEndDecelerating")
-    }
-    
-    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        print("scrollViewWillBeginDecelerating")
-    }
-    
-    func scrollViewDidScrollToTop(_ scrollView: UIScrollView) {
-        print("scrollViewDidScrollToTop")
-    }
-    
-    
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
-        print("scrollViewDidEndScrollingAnimation")
     }
 }

@@ -70,7 +70,7 @@ class HomeMoreView: ViewBuilder{
         self.navigationItem.rightBarButtonItem = reloadButton
     }
     
-    @objc private func reloadAction() {
+    @objc func reloadAction() {
         buildData()
     }
     
@@ -82,7 +82,7 @@ class HomeMoreView: ViewBuilder{
 
 extension HomeMoreView: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listNewDatasource.sectionList(section: typo).data.count
+        return listNewDatasource.sectionList(section: typo)?.data.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

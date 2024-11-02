@@ -25,7 +25,7 @@ final class ImageArticleVMTest: XCTestCase {
     
     func testRequestImageBySuccess(){
         let testUrl = "https://static01.nyt.com/images/2024/10/31/multimedia/31xp-flight-fwcl-copy/31xp-flight-fwcl-mediumThreeByTwo210.jpg"
-        expectation = self.expectation(description: "Request completed")
+        expectation = self.expectation(description: "ImageArticleVMTest completed")
         viewModel.requestImageBy(url: testUrl)
         guard let expectation = expectation else{
             XCTFail("Failure expectation ")
@@ -36,7 +36,7 @@ final class ImageArticleVMTest: XCTestCase {
     
     func testRequestImageByFailure(){
         let testUrl = "https://static01.nyt.com/images/2024/10/31/multimedia/31xp-flight-fwcl-copy/failure.jpg"
-        expectation = self.expectation(description: "Request completed with failure")
+        expectation = self.expectation(description: "ImageArticleVMTest completed with failure")
         viewModel.requestImageBy(url: testUrl)
         guard let expectation = expectation else{
             XCTFail("Failure expectation ")
